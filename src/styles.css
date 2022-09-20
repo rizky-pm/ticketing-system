@@ -1,0 +1,14 @@
+.ant-row-center {
+  height: 100vh;
+  background-color: var(--color-light);
+}
+
+.heading-1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.form-container {
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
