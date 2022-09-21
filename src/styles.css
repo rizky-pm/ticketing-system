@@ -1,6 +1,37 @@
-.ant-row-center {
+.ant-row-space-between {
   height: 100vh;
   background-color: var(--color-light);
+}
+
+@media screen and (max-width: 992px) {
+  .ant-row-space-between::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+    background-image: url('./assets/illustrations/login.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.ant-row-middle {
+  height: 100vh;
+}
+
+/* !Form */
+
+.ant-form-item:nth-child(2) {
+  margin-bottom: 30px;
+}
+
+/* !Button */
+.ant-btn {
 }
 
 .heading-1 {
@@ -11,4 +42,13 @@
 .form-container {
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-highlighted {
+  color: var(--color-primary);
+  font-weight: 700;
 }

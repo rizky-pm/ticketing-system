@@ -1,0 +1,19 @@
+.logo {
+  position: absolute;
+  top: 1%;
+  left: 5%;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.copyright {
+  position: absolute;
+  bottom: 1%;
+  left: 5%;
+  font-size: 0.8rem;
+}
+
+.login-illustration {
+  width: 100%;
+}

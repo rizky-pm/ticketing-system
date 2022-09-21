@@ -1,0 +1,16 @@
+.error-message {
+  transition: all 0.5s ease-in-out;
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  margin: 0;
+  padding: 0;
+  width: 0.1;
+  height: 0.1;
+  transform: scaleY(0);
+  transform-origin: top;
+}
