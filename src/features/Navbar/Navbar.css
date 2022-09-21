@@ -1,0 +1,6 @@
+nav {
+  background-color: var(--color-dark);
+  color: var(--color-light);
+
+  padding: 10px 20px;
+}

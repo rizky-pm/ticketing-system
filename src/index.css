@@ -90,9 +90,9 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  /* vertical-align: baseline; */
+  vertical-align: baseline;
   font-family: 'Plus Jakarta Sans', sans-serif;
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 /* HTML5 display-role reset for older browsers */
 article,
