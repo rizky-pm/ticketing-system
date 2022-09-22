@@ -12,6 +12,7 @@ const LoginPage = () => {
   const user = localStorage.getItem('user');
 
   if (user) {
+    console.log('Ada user');
     navigate('/');
   }
 
