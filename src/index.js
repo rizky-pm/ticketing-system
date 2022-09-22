@@ -1,14 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import axios from 'axios';
 import { RouterProvider } from 'react-router-dom';
 
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import router from './routes';
-
-axios.defaults.baseURL = 'http://localhost:3333/';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
