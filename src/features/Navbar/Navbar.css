@@ -1,6 +1,15 @@
 nav {
   background-color: var(--color-dark);
   color: var(--color-light);
+  display: flex;
+  align-items: center;
+}
 
+.navbar-link {
+  color: var(--color-light);
   padding: 10px 20px;
+}
+
+.navbar-active-link {
+  background-color: var(--color-primary);
 }

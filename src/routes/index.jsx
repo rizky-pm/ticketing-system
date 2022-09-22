@@ -6,8 +6,10 @@ import {
 import axios from 'axios';
 
 import PrivateRoute from './PrivateRoute';
-import HomePage from '../pages/HomePage/HomePage';
 import LoginPage from '../pages/LoginPage/LoginPage';
+import HomePage from '../pages/HomePage/HomePage';
+import EmployeePage from '../pages/EmployeePage/EmployeePage';
+
 import '../styles.css';
 import '../styles.less';
 import { getAllTickets } from '../api';
@@ -17,8 +19,10 @@ axios.defaults.baseURL = 'http://localhost:3333/';
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
+      <Route path='/login' element={<LoginPage />} />
+
       <Route
-        path='/'
+        path='/home'
         element={
           <PrivateRoute>
             <HomePage />
@@ -29,7 +33,14 @@ const router = createBrowserRouter(
         }}
       />
 
-      <Route path='/login' element={<LoginPage />} />
+      <Route
+        path='/employee'
+        element={
+          <PrivateRoute>
+            <EmployeePage />
+          </PrivateRoute>
+        }
+      />
     </>
   )
 );

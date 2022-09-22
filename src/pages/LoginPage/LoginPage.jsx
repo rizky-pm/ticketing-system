@@ -12,7 +12,7 @@ const LoginPage = () => {
   const user = localStorage.getItem('user');
 
   if (user) {
-    navigate('/');
+    navigate('/home');
   }
 
   return (
