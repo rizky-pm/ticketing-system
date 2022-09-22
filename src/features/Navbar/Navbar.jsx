@@ -7,12 +7,12 @@ const Navbar = () => {
   return (
     <nav>
       <NavLink
-        to='/home'
+        to='/tickets'
         className={({ isActive }) =>
           (isActive ? 'navbar-active-link' : undefined) + ' navbar-link'
         }
       >
-        TICKET
+        TICKETS
       </NavLink>
       <NavLink
         to='/employee'

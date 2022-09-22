@@ -13,6 +13,8 @@ import EmployeePage from '../pages/EmployeePage/EmployeePage';
 import '../styles.css';
 import '../styles.less';
 import { getAllTickets } from '../api';
+import DetailTicket from '../features/DetailTicket/DetailTicket';
+import AllTicket from '../features/AllTicket/AllTicket';
 
 axios.defaults.baseURL = 'http://localhost:3333/';
 
@@ -22,7 +24,7 @@ const router = createBrowserRouter(
       <Route path='/login' element={<LoginPage />} />
 
       <Route
-        path='/home'
+        path='/tickets'
         element={
           <PrivateRoute>
             <HomePage />
@@ -31,6 +33,14 @@ const router = createBrowserRouter(
         loader={async () => {
           return await getAllTickets();
         }}
+        children={[
+          <Route key={<AllTicket />} path='' element={<AllTicket />} />,
+          <Route
+            key={<DetailTicket />}
+            path=':ticketCode'
+            element={<DetailTicket />}
+          />,
+        ]}
       />
 
       <Route

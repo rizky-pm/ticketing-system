@@ -20,7 +20,7 @@ const LoginForm = () => {
     setIsLoading(false);
 
     if (res.status === 200) {
-      return navigate('/home');
+      return navigate('/tickets');
     }
 
     if (res.response.status === 401) {

@@ -1,9 +1,10 @@
 :root {
   --color-primary: #2b59c3;
   --color-light: #fffbfc;
-  --color-dark: #010400;
-  --color-darkGray: #5d5e60;
-  --color-lightGray: #8d8d92;
+  --color-dark: #21262b;
+  --color-darkGray: #353d44;
+  --color-gray: #424c55;
+  --color-veryLightGray: #687077;
 }
 
 html,
