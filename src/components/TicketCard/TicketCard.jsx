@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './TicketCard.scss';
 
 const TicketCard = ({ data }) => {
-  console.log(data);
   return (
-    <div className='card-container'>
+    <Link to={`/tickets/${data.id}`} className='card-container'>
       <p className='card--text__title'>
         {data.title} #{data.id}
       </p>
@@ -14,7 +14,7 @@ const TicketCard = ({ data }) => {
         {renderTag(data)}
         <span className='card--tag-status'>{data.statusName}</span>
       </div>
-    </div>
+    </Link>
   );
 };
 

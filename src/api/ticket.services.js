@@ -10,3 +10,17 @@ export const getAllTickets = async () => {
     })
     .then((response) => response);
 };
+
+export const getTicketById = async (id) => {
+  try {
+    const response = await axios.get(`/tickets/${id}`, {
+      headers: {
+        Authorization: `Bearer ${userToken}`,
+      },
+    });
+
+    return response;
+  } catch (error) {
+    return error;
+  }
+};

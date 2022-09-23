@@ -1,0 +1,31 @@
+@import "../../styles/styles.scss";
+
+.container {
+    @include section-container;
+}
+
+.container--header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-direction: row;
+
+    &__back-icon {
+        padding: 5px;
+        font-size: 24px;
+        color: $primary-color;
+        transition: $transition-effect;
+
+        &:hover {
+            cursor: pointer;
+            color: $dark-color;
+            transition: $transition-effect;
+        }
+    }
+
+    &__title {
+        color: $dark-color;
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

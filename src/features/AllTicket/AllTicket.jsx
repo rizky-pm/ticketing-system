@@ -42,7 +42,6 @@ const AllTicket = () => {
     <div className='section-container'>
       <Row justify='space-between'>
         {data.map((item, index) => {
-          console.log(item);
           return (
             <Col key={index} span={Math.ceil(24 / data.length - 1)}>
               {/* data */}

@@ -37,7 +37,7 @@ const router = createBrowserRouter(
           <Route index key={<AllTicket />} path='' element={<AllTicket />} />,
           <Route
             key={<DetailTicket />}
-            path=':ticketCode'
+            path=':ticketId'
             element={<DetailTicket />}
           />,
         ]}
