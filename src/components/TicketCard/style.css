@@ -30,13 +30,31 @@
 .card--tag-priority__danger {
   text-transform: capitalize;
   font-weight: bold;
-  color: red;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 2px;
+  background-color: var(--color-dangerBg);
+  color: var(--color-dangerText);
 }
 
 .card--tag-priority__warning {
   text-transform: capitalize;
   font-weight: bold;
-  color: yellow;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 2px;
+  background-color: var(--color-warningBg);
+  color: var(--color-warningText);
+}
+
+.card--tag-priority__success {
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 2px;
+  background-color: var(--color-successBg);
+  color: var(--color-successText);
 }
 
 .card--tag {

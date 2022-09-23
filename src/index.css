@@ -5,7 +5,15 @@
   --color-darkGray: #353d44;
   --color-gray: #424c55;
   --color-lightGray: #687077;
+
   --color-bgHover: #353d4425;
+
+  --color-dangerBg: #fdbcbe;
+  --color-dangerText: #d73a49;
+  --color-warningBg: #fbfdbc;
+  --color-warningText: #d69e2e;
+  --color-successBg: #c7fdbc;
+  --color-successText: #28a745;
 
   --transition: all 0.3s ease-in-out;
 }
