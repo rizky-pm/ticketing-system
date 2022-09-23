@@ -1,0 +1,78 @@
+.container {
+  padding: 20px 40px;
+}
+
+.container--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container--header__back-icon {
+  padding: 5px;
+  font-size: 24px;
+  color: #2b59c3;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container--header__back-icon:hover {
+  cursor: pointer;
+  color: #21262b;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.container--header__title {
+  color: #21262b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.container--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5px;
+  padding: 20px 45px;
+  color: #21262b;
+}
+
+.container--content__title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.container--content__customer-name {
+  font-size: 16px;
+}
+
+.container--content__date {
+  font-style: italic;
+}
+
+.container--content__desc {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.container--content__attachment {
+  width: 200px;
+  aspect-ratio: 1/1;
+  background-color: #687077;
+  border: dashed 2px yellow;
+}
+/*# sourceMappingURL=DetailTicket.css.map */

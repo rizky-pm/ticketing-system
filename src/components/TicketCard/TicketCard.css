@@ -1,0 +1,80 @@
+.card-container {
+  padding: 20px;
+  border-bottom: 2px solid #68707720;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.card-container:hover {
+  background-color: var(--color-bgHover);
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.card-container:last-child {
+  border-bottom: none;
+}
+
+.card--text__title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin-bottom: 5px;
+}
+
+.card--text__customerName {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 5px;
+}
+
+.card--tag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+}
+
+.card--tag-priority__high {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: var(--color-dangerText);
+  background-color: var(--color-dangerBg);
+}
+
+.card--tag-priority__medium {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: var(--color-warningText);
+  background-color: var(--color-warningBg);
+}
+
+.card--tag-priority__low {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: var(--color-successText);
+  background-color: var(--color-successBg);
+}
+
+.card--tag-status {
+  text-transform: capitalize;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 2px 10px;
+  border-radius: 2px;
+  color: var(--color-lightGray);
+}
+/*# sourceMappingURL=TicketCard.css.map */
