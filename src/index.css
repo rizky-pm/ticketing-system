@@ -6,14 +6,14 @@
   --color-gray: #424c55;
   --color-lightGray: #687077;
 
-  --color-bgHover: #353d4425;
+  --color-bgHover: #353d4416;
 
   --color-dangerBg: #fdbcbe;
   --color-dangerText: #c6181e;
   --color-warningBg: #fbfdbc;
-  --color-warningText: #dbde1b;
+  --color-warningText: #c6a21e;
   --color-successBg: #c7fdbc;
-  --color-successText: #36c618;
+  --color-successText: #1ec62b;
 
   --transition: all 0.3s ease-in-out;
 }

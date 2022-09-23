@@ -10,7 +10,10 @@ const TicketCard = ({ data }) => {
         {data.title} #{data.id}
       </p>
       <p className='card--text__customerName'>{data.customerName}</p>
-      <div className='card--tag'>{renderTag(data)}</div>
+      <div className='card--tag'>
+        {renderTag(data)}
+        <span className='card--tag-status'>{data.statusName}</span>
+      </div>
     </div>
   );
 };

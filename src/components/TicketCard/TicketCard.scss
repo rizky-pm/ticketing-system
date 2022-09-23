@@ -1,4 +1,4 @@
-@import "../../styles/_mixins";
+@import "../../styles/styles.scss";
 
 .card-container {
   padding: 20px;
@@ -56,4 +56,9 @@
     color: var(--color-successText);
     background-color: var(--color-successBg);
   }
+}
+
+.card--tag-status {
+  @include card-tag;
+  color: var(--color-lightGray);
 }
