@@ -1,0 +1,59 @@
+@import "../../styles/_mixins";
+
+.card-container {
+  padding: 20px;
+  border-bottom: 2px solid #68707720;
+  transition: var(--transition);
+
+  &:hover {
+    background-color: var(--color-bgHover);
+    transition: var(--transition);
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.card--text {
+  &__title {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-dark);
+    margin-bottom: 5px;
+  }
+
+  &__customerName {
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--color-primary);
+    margin-bottom: 5px;
+  }
+}
+
+
+.card--tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card--tag-priority {
+  &__high {
+    @include card-tag;
+    color: var(--color-dangerText);
+    background-color: var(--color-dangerBg);
+  }
+
+  &__medium {
+    @include card-tag;
+    color: var(--color-warningText);
+    background-color: var(--color-warningBg);
+  }
+
+  &__low {
+    @include card-tag;
+    color: var(--color-successText);
+    background-color: var(--color-successBg);
+  }
+}

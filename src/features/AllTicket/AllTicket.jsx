@@ -4,7 +4,7 @@ import { Row, Col } from 'antd';
 
 import { fetchTickets } from '../../store/ticket.slice';
 
-import TicketCard from '../../components/TicketCard';
+import TicketCard from '../../components/TicketCard/TicketCard';
 
 import './AllTicket.css';
 
