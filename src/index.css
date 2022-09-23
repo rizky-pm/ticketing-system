@@ -4,7 +4,10 @@
   --color-dark: #21262b;
   --color-darkGray: #353d44;
   --color-gray: #424c55;
-  --color-veryLightGray: #687077;
+  --color-lightGray: #687077;
+  --color-bgHover: #353d4425;
+
+  --transition: all 0.3s ease-in-out;
 }
 
 html,

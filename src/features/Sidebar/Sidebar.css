@@ -16,7 +16,7 @@
 }
 
 .sidebar-link:hover {
-  background-color: var(--color-veryLightGray);
+  background-color: var(--color-lightGray);
   transition: all 0.3s ease-in-out;
   border-left: 5px solid var(--color-primary);
 }

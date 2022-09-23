@@ -1,0 +1,46 @@
+.card-container {
+  padding: 20px;
+  border-bottom: 2px solid #68707720;
+  transition: var(--transition);
+}
+
+.card-container:hover {
+  background-color: var(--color-bgHover);
+  transition: var(--transition);
+}
+
+.card-container:last-child {
+  border-bottom: none;
+}
+
+.card--text__title {
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin-bottom: 5px;
+}
+
+.card--text__customerName {
+  font-size: 12px;
+  font-weight: bold;
+  color: var(--color-primary);
+  margin-bottom: 5px;
+}
+
+.card--tag-priority__danger {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: red;
+}
+
+.card--tag-priority__warning {
+  text-transform: capitalize;
+  font-weight: bold;
+  color: yellow;
+}
+
+.card--tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
