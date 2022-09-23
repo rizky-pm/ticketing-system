@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Col, Row } from 'antd';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,9 +11,11 @@ const LoginPage = () => {
   const navigate = useNavigate();
   const user = localStorage.getItem('user');
 
-  if (user) {
-    navigate('/tickets');
-  }
+  useEffect(() => {
+    if (user) {
+      navigate('/tickets');
+    }
+  }, [user]);
 
   return (
     <Row justify='space-between' align='middle'>

@@ -1,1 +1,2 @@
-export const userToken = JSON.parse(localStorage.getItem('user')).data.token;
+export const userToken =
+  JSON.parse(localStorage.getItem('user'))?.data?.token ?? null;

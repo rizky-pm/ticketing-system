@@ -11,15 +11,12 @@ const { Panel } = Collapse;
 const CollapseComponent = ({ children }) => {
   const data = useSelector((state) => state.product);
   const dispatch = useDispatch();
-  const onChange = (key) => {
-    console.log(key);
-  };
 
   useEffect(() => {
     dispatch(fetchProducts());
   }, []);
   return (
-    <Collapse defaultActiveKey={['1']} onChange={onChange}>
+    <Collapse defaultActiveKey={['1']}>
       <Panel header={'Product Category'}>
         {data.products.map((product) => {
           const slug = slugFromName(product.productName);

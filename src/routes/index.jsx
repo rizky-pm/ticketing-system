@@ -34,7 +34,7 @@ const router = createBrowserRouter(
           return await getAllTickets();
         }}
         children={[
-          <Route key={<AllTicket />} path='' element={<AllTicket />} />,
+          <Route index key={<AllTicket />} path='' element={<AllTicket />} />,
           <Route
             key={<DetailTicket />}
             path=':ticketCode'

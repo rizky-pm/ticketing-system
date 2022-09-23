@@ -9,7 +9,7 @@ const PrivateRoute = ({ children }) => {
   // const tokenExp = jwt_decode(user.data.token).exp * 1000;
 
   if (!user) {
-    return <Navigate to='login' replace />;
+    return <Navigate to='/login' replace />;
   }
 
   return (
